@@ -1,4 +1,9 @@
-def count_word_occurrence(file_path: str) -> str:
+def count_word_occurrence(file_path: str):
+    """
+    This function will return the number of occurrence of each word in a text
+    :param file_path: The path of a text file
+    :return: None
+    """
     counted_words = {}
     with open(file_path, 'r') as text_in:
         for line in text_in:
