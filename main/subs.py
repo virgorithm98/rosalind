@@ -14,6 +14,4 @@ def locate_motif_starting_position(dna_string: str, pattern: str):
     return starting_position
 
 
-dna_string, dna_substring = separate_two_dna_strings("../data/subs_case_1.txt")
-
-print(locate_motif_starting_position(dna_string, dna_substring))
+print(locate_motif_starting_position(*separate_two_dna_strings("../data/subs_case_1.txt")))
