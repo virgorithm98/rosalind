@@ -1,7 +1,7 @@
 def convert_fasta_to_dict(file_path: str) -> dict:
     id_dna_string_pair = {}
 
-    with open("../data/gc_case_1.txt", 'r') as text:
+    with open(file_path, 'r') as text:
         fasta_id = ""
         for line in text:
             if line.startswith(">"):
